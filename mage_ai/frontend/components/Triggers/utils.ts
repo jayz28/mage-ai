@@ -65,6 +65,11 @@ export const getTriggerTypes = (
       uuid: ScheduleTypeEnum.TIME,
     },
     {
+      description: () => 'This pipeline will run when a specific event occurs.',
+      label: () => 'Event',
+      uuid: ScheduleTypeEnum.EVENT,
+    },
+    {
       description: () => 'Run this pipeline when you make an API call.',
       label: () => 'API',
       uuid: ScheduleTypeEnum.API,
